@@ -1,12 +1,14 @@
 import CssBaseline from "@material-ui/core/CssBaseline";
+import { ThemeProvider } from "@material-ui/core/styles";
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import GoogleLogin from "./components/login/GoogleLogin";
+import theme from "./lib/ThemeHelper";
 
 function App() {
 	return (
-		<>
+		<ThemeProvider theme={theme}>
 			<CssBaseline />
 			<BrowserRouter>
 				<Switch>
@@ -18,7 +20,7 @@ function App() {
 					</Route>
 				</Switch>
 			</BrowserRouter>
-		</>
+		</ThemeProvider>
 	);
 }
 
