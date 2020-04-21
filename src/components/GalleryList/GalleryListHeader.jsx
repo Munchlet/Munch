@@ -3,10 +3,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
 const useStyles = makeStyles((theme) => ({
 	headerSeeAll: {
-		top: "1rem",
+		top: "0.7rem",
 		right: 0,
 		position: "absolute",
-		color: "dodgerblue",
+		color: "deepskyblue",
 	},
 	headerSubtitle: {
 		display: "block",
