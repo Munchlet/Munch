@@ -1,5 +1,4 @@
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
+import { Container, Divider, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import React, { useContext } from "react";
 import { store } from "../store";
@@ -19,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
 			display: "none",
 		},
 	},
+	galleryDivider: {
+		margin: "1.4rem 0rem",
+	},
 }));
 
 export default function Homepage() {
@@ -37,8 +39,9 @@ export default function Homepage() {
 			</Grid>
 			<Grid container className={classes.root} spacing={2} align="center">
 				<CategoryGrid />
-				<GalleryList />
 			</Grid>
+			<Divider className={classes.galleryDivider} />
+			<GalleryList />
 		</Container>
 	);
 }
