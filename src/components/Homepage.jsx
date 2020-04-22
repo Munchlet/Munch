@@ -5,6 +5,7 @@ import { store } from "../store";
 import Carousel from "./Carousel";
 import CategoryGrid from "./CategoryGrid";
 import GalleryList from "./GalleryList";
+import PlacesList from "./PlacesList";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -42,6 +43,8 @@ export default function Homepage() {
 			</Grid>
 			<Divider className={classes.galleryDivider} />
 			<GalleryList />
+			<Divider className={classes.galleryDivider} />
+			<PlacesList />
 		</Container>
 	);
 }
