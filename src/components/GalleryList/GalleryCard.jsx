@@ -8,9 +8,11 @@ import React from "react";
 
 const useStyles = makeStyles({
 	root: {
+		margin: "0rem 0.4rem",
 		position: "relative",
+		minWidth: 220,
 		maxWidth: 220,
-		borderRadius: "0.4rem",
+		borderRadius: "0.6rem",
 		boxShadow: "0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.19)",
 	},
 	media: {
