@@ -4,7 +4,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import GoogleLogin from "./components/login/GoogleLogin";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Navbar";
 import theme from "./lib/ThemeHelper";
 
 function App() {
